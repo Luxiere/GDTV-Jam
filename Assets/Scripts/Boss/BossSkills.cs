@@ -8,11 +8,17 @@ public class BossSkills : MonoBehaviour
     public float defaultSpeed = 5f;
     public float defaultProjectileSpawnDistance = 1f;
 
+
+    private void Start()
+    {
+        CircularShot(6);
+    }
+
     private IEnumerator Barrage(int projectileAmount, float fireRate)
     {
         for(int i = 0; i < projectileAmount; i++)
         {
-            SpawnBullet(new Vector2(0, -1), defaultSpeed);
+            SpawnBullet(new Vector2(0,1), defaultSpeed);
             yield return new WaitForSeconds(fireRate);
         }
     }
@@ -47,6 +53,6 @@ public class BossSkills : MonoBehaviour
 
     private GameObject CircularSpawn(GameObject obj, Vector2 origin, float degree, float radius)
     {
-        return Instantiate(obj, new Vector2(origin.x + radius * Mathf.Cos(degree * Mathf.Deg2Rad), origin.y + radius * Mathf.Sin(degree * Mathf.Deg2Rad)), Quaternion.Euler(0f, 0f, degree));
+        return Instantiate(obj, new Vector2(origin.x + radius * Mathf.Cos(degree * Mathf.Deg2Rad), origin.y + radius * Mathf.Sin(degree * Mathf.Deg2Rad)), Quaternion.Euler(0f, 0f, degree - 90));
     }
 }

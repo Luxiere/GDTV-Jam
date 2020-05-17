@@ -227,9 +227,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc04eeb551515a844b426f0411a40126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 5745850163296657914, guid: 3c976721f207dac499ef297062c09939,
+  projectile: {fileID: 3852540305152180560, guid: 1c823445414a88a4a89ce29add7ad3c1,
     type: 3}
-  defaultSpeed: 5
+  defaultSpeed: 1
   defaultProjectileSpawnDistance: 1
 --- !u!1 &519420028
 GameObject:
