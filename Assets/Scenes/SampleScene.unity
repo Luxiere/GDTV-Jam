@@ -210,7 +210,7 @@ Transform:
   m_GameObject: {fileID: 420209780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc04eeb551515a844b426f0411a40126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 3852540305152180560, guid: 1c823445414a88a4a89ce29add7ad3c1,
+  projectile: {fileID: 3852540305152180560, guid: e544047793903eb4bbb7219d654a1e15,
     type: 3}
   defaultSpeed: 1
   defaultProjectileSpawnDistance: 1
@@ -284,7 +284,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
